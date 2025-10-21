@@ -1,0 +1,121 @@
+﻿.rewards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.rewards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.lootbox-panel, .history-panel {
+    grid-column: span 2;
+}
+
+.management-panel, .history-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.reel-wrapper {
+    margin: 1rem 0;
+}
+
+.won-item-display {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid;
+}
+
+.rarity-common { background-color: #333; border-color: #777; }
+.rarity-uncommon { background-color: #1a4a1a; border-color: #3c8d3c; }
+.rarity-rare { background-color: #1a3a6a; border-color: #3c78d8; }
+.rarity-unique { background-color: #5a1a6a; border-color: #a33cd8; }
+.rarity-legendary { background-color: #b8860b; border-color: #ffd700; }
+
+
+.management-list, .history-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    min-height: 200px;
+    max-height: 30vh;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+
+.management-list li, .history-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.item-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+.history-list .date {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.rewards-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.rewards-table th, .rewards-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.rewards-table th {
+    font-weight: bold;
+    background-color: var(--surface-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.rewards-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.rewards-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rewards-table tr.rarity-common {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+}
+
+.rewards-table tr.rarity-uncommon {
+    background-color: rgba(46, 139, 87, 0.2);
+}
+
+.rewards-table tr.rarity-rare {
+    background-color: rgba(70, 130, 180, 0.25);
+}
+
+.rewards-table tr.rarity-unique {
+    background-color: rgba(148, 0, 211, 0.25);
+}
+
+.rewards-table tr.rarity-legendary {
+    background-color: rgba(255, 215, 0, 0.35);
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.rewards-table tr.rarity-legendary button {
+    color: #1a1a1a;
+}

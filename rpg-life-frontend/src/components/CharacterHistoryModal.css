@@ -1,0 +1,78 @@
+﻿.history-container {
+    min-width: 550px;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.history-item {
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    border-left: 4px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.history-item.completed {
+    background-color: rgba(62, 169, 71, 0.1);
+    border-color: #3ea947;
+}
+
+.history-item.reverted {
+    background-color: rgba(212, 63, 63, 0.1);
+    border-color: #d43f3f;
+}
+
+.history-item.progress-added {
+    background-color: rgba(70, 130, 180, 0.1);
+    border-color: #4682b4;
+}
+
+.history-item-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+}
+
+.history-description {
+    margin: 0;
+    font-weight: 500;
+    text-align: left;
+}
+
+.history-skill-name {
+    margin: 0;
+    font-size: 0.85em;
+    color: var(--text-color-muted);
+}
+
+.history-xp {
+    margin: 0;
+    font-weight: bold;
+}
+
+.history-item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    font-size: 0.8em;
+    color: var(--text-color-muted);
+    text-align: right;
+    white-space: nowrap;
+}
+
+.history-action {
+    font-weight: bold;
+}

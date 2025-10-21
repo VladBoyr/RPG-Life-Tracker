@@ -1,0 +1,33 @@
+﻿.editor-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.editor-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-weight: bold;
+}
+
+.editor-form input,
+.editor-form select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.form-buttons button[type="button"] {
+    background-color: #555;
+}

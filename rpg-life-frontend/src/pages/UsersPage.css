@@ -1,0 +1,23 @@
+﻿.users-table-container {
+    padding: 0; /* Убираем padding у карточки, чтобы таблица была во всю ширину */
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th, .users-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.users-table th {
+    background-color: var(--surface-color);
+    font-weight: bold;
+}
+
+.users-table tbody tr:hover {
+    background-color: var(--hover-color);
+}

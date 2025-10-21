@@ -1,0 +1,117 @@
+﻿.groups-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.panel-header h3 {
+    margin: 0;
+}
+
+.groups-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.groups-list li {
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.groups-list li:hover {
+    background-color: var(--hover-color);
+}
+
+.groups-list li.selected {
+    background-color: var(--primary-color);
+    color: var(--progressbar-text-color);
+    font-weight: bold;
+}
+
+.members-list, .search-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.members-list li, .search-results-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.user-search input {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.user-search {
+    position: relative;
+}
+
+.search-results-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.search-results-list li {
+    padding: 0.75rem;
+    cursor: pointer;
+}
+
+.search-results-list li:hover {
+    background-color: var(--hover-color);
+}
+
+.group-detail-view {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.member-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.small-btn {
+    background: none;
+    border: none;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.small-btn:hover {
+    opacity: 1;
+}

@@ -1,0 +1,66 @@
+﻿.settings-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.settings-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 2em;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.settings-card h3 {
+    margin: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.settings-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.settings-row label {
+    font-weight: bold;
+}
+
+.settings-row select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.settings-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.settings-message {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.settings-message.success {
+    color: #a3e9a4;
+    background-color: rgba(62, 169, 71, 0.2);
+}
+
+.settings-message.error {
+    color: #f7a7a3;
+    background-color: rgba(212, 63, 63, 0.2);
+}
